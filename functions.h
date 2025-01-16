@@ -1,21 +1,17 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-// ###########################################################
 typedef struct {
-    double *csr_data;   // Array of non-zero values
-    int *col_ind;       // Array of column indices
-    int *row_ptr;       // Array of row pointers
-    int num_non_zeros;  // Number of non-zero elements
-    int num_rows;       // Number of rows in matrix
-    int num_cols;       // Number of columns in matrix
+    double *csr_data;
+    int *col_ind;
+    int *row_ptr;
+    int num_non_zeros;
+    int num_rows;
+    int num_cols;
 } CSRMatrix;
 
 
 void ReadMMtoCSR(const char *filename, CSRMatrix *matrix);
-/* <Declaring the needed functions>
-<Implementation occurs in functions.c>
-*/
 
 int addition(CSRMatrix *A, CSRMatrix *B, CSRMatrix *C);
 int subtraction(CSRMatrix *A, CSRMatrix *B, CSRMatrix *C);
