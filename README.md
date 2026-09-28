@@ -19,7 +19,7 @@ The program supports matrix addition, subtraction, multiplication, and transposi
 
 * **Language:** C
 * **Build System:** Make
-* **Input Format:** Matrix Market (`.mtx`)
+* **Libraries & APIs:** `stdlib.h`, `stdio.h`, `string.h`, `time.h`
 
 ## How to Run
 
